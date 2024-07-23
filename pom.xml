@@ -1,8 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>iva</groupId>
-  <artifactId>trainEnv</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Port01</groupId>
+	<artifactId>Port01</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,8 +21,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>1.5</source>
+					<target>1.5</target>
 				</configuration>
 			</plugin>
 
@@ -111,7 +113,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.0.0</version>
+			<version>7.4.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -158,13 +160,22 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>4.4.3</version>
+			<version>3.3.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.beust</groupId>
 			<artifactId>jcommander</artifactId>
 			<version>1.48</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>atu.testng.reports.ATUReports</groupId>
+			<artifactId>atu-reports</artifactId>
+			<version>2.1</version>
+			<scope>system</scope>
+			<systemPath>D:\Project 2\Port_Automation\Jars\ATUTestRecorder_2.1.jar</systemPath>
+		</dependency>
+		
 		<dependency>
 			<groupId>com.automation-remarks</groupId>
 			<artifactId>video-recorder</artifactId>
@@ -175,18 +186,14 @@
 			<artifactId>monte-screen-recorder</artifactId>
 			<version>0.7.7.0</version>
 		</dependency>
+		
+		
 		<dependency>
-             <groupId>io.rest-assured</groupId>
-             <artifactId>rest-assured</artifactId>
-             <version>3.1.0</version>
-         </dependency>
-       <dependency>
-             <groupId>net.minidev</groupId>
-             <artifactId>json-smart</artifactId>
-             <version>1.0.9</version>
-         </dependency>
-        
-    
+			<groupId>com.github.stephenc.monte</groupId>
+			<artifactId>monte-screen-recorder</artifactId>
+			<version>0.7.7.0</version>
+		</dependency>   
+
 	</dependencies>
 
 </project>
